@@ -14,9 +14,9 @@ public class NestedLoops {
     public void drawFilledBox(int width, int height) {
 
         int row = 0;
-        while (row < height) {
+        while (row <= height) {
             int col = 0;
-            while(col < width) {
+            while(col <= width) {
                 System.out.println("*");
                 col++;
             }
