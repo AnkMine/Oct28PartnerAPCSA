@@ -14,7 +14,7 @@ public class Runner {
 
         drawer.drawMultiChart();
         int rows = getValidNonZeroInteger(sc, "Enter the number of rows for your triangle: ");
-        drawer.drawMultiChart(rows);
+        drawer.drawTriangle(rows);
 
 
     }
