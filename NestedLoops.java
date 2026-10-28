@@ -11,7 +11,7 @@ public class NestedLoops {
         }
     }
 
-    public drawFilledBox(int width, int height) {
+    public void drawFilledBox(int width, int height) {
 
         int row = 0;
         while (row < height) {
