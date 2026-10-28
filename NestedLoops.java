@@ -5,6 +5,7 @@ public class NestedLoops {
             for (int inner = 1; inner <= 4; inner++) {
                 System.out.print((inner*outer) + " ");
             }
+
             System.out.println();
         }
     }
@@ -19,5 +20,15 @@ public class NestedLoops {
 
             System.out.println();
         }
+    }
+
+    public void drawTriangle(int numRows) {
+        for (int outer = 1; outer <= numRows; outer++) {
+            for (int inner = 1; inner <= outer; inner++) {
+                System.out.print("*");
+            }
+        }
+
+        System.out.println();
     }
 }
