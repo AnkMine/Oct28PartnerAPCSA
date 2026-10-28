@@ -43,9 +43,8 @@ public class NestedLoops {
             for (int inner = 1; inner <= outer; inner++) {
                 System.out.print("*");
             }
+            System.out.println();
         }
-
-        System.out.println();
     }
     
 }
