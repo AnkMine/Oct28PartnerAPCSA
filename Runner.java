@@ -1,17 +1,23 @@
+// import scanner class
 import java.util.Scanner;
 
+// main class
 public class Runner {
     
+    // main method
     public static void main(String[] args) {
         
+        // create new instance of NestedLoops class and scanner class
         NestedLoops drawer = new NestedLoops();
         Scanner sc = new Scanner(System.in);
 
+        // calls drawFilledBox(); methods, default 10x10 then one with user's width and height
         drawer.drawFilledBox();
         int width = getValidNonZeroInteger(sc, "Enter the width of your box: ");
         int height = getValidNonZeroInteger(sc, "Enter the height of your box: ");
         drawer.drawFilledBox(width, height);
 
+        // calls drawMultiChart(); then gets rows from user and calls drawTriangle();
         drawer.drawMultiChart();
         int rows = getValidNonZeroInteger(sc, "Enter the number of rows for your triangle: ");
         drawer.drawTriangle(rows);
@@ -19,6 +25,7 @@ public class Runner {
 
     }
 
+    // this method takes in a Scanner and a prompt and ensures the user enters a valid non-zero integer
     private static int getValidNonZeroInteger(Scanner sc, String prompt) {
         // stores user input and validity flag
         int userInput = 0;
